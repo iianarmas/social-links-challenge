@@ -52,6 +52,7 @@ body {
     row-gap: 24px;
 }
 
+/*PROFILE IMAGE*/
 .person-image {
     width: 90px;
     height: 90px;
@@ -60,13 +61,20 @@ body {
 }
 
 .person-image:hover {
-    border: 2px solid var(--accent-color);
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.person-image:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 .person-image:active {
     transform: scale(1.02);
 }
 
+/*MAIN PROFILE*/
 .person-profile {
     display: grid;
     row-gap: 12px;
@@ -95,6 +103,7 @@ body {
     width: 100%;
 }
 
+/*BUTTONS*/
 .link-button {
     width: 100%;
     font-size: 0.875rem;
@@ -112,6 +121,11 @@ body {
     background-color: var(--accent-color);
     color: var(--primary-grey);
     font-weight: 700;
+}
+
+.link-button:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 .link-button:active {
