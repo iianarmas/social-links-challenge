@@ -1,0 +1,120 @@
+:root {
+    --background: hsl(0, 0%, 8%);
+    --primary-grey: hsl(0, 0%, 12%);
+    --secondary-grey: hsl(0, 0%, 20%);
+
+    --accent-color: hsl(75, 94%, 57%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--background);
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.card-container {
+    width: clamp(327px, 27vw, 384px);
+    height: clamp(577px, 64vh, 612px);
+    background-color: white;
+    background-color: var(--primary-grey);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: clamp(280px, 79.17vw, 304px);
+    display: grid;
+    row-gap: 24px;
+}
+
+.profile-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    place-items: center;
+    row-gap: 24px;
+}
+
+.person-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.person-image:hover {
+    border: 2px solid var(--accent-color);
+}
+
+.person-image:active {
+    transform: scale(1.02);
+}
+
+.person-profile {
+    display: grid;
+    row-gap: 12px;
+    place-items: center;
+}
+
+.peron-name {
+    font-size: 1.25rem;
+}
+
+.person-location {
+    font-size:0.875rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.person-description {
+    font-size: 0.875rem;
+}
+
+.links-container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    place-items: center;
+    row-gap: 18px;
+    width: 100%;
+}
+
+.link-button {
+    width: 100%;
+    font-size: 0.875rem;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--secondary-grey);
+}
+
+.link-button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-grey);
+    font-weight: 700;
+}
+
+.link-button:active {
+    transform: scale(1.02);
+}
+
